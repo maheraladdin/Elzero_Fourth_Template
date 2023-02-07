@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-grey">
+<!-- start header  -->
+<header class="d-flex jc-space-between p-10 ai-center bg-white">
+    <article id="magic-search-icon">
+        <input class="fs-13 tt-capitalize" id="search-box" name="search" type="text" placeholder="type a Keyword" />
+    </article>
+    <article class="d-flex jc-space-between w-80 ai-center">
+        <section>
+            <i id="red-notification" class="fa-regular fa-bell fa-fw"></i>
+        </section>
+        <section>
+            <img
+                    src="photos/avatar.png"
+                    alt="user image"
+                    width="40"
+                    height="40"
+            />
+        </section>
+    </article>
+
+</header>
+
+<!-- start navbar-->
+<nav class="d-flex jc-space-between p-5 ai-center bg-white p-fixed">
+    <article class="d-flex ai-center">
+        <section class="d-flex ai-center jc-center">
+            <h3 class="fs-15"> Elzero </h3>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page"  href="index.html" data-page-name="dashboard"><i class="fa-regular fa-chart-bar fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="settings.html" data-page-name="settings"><i class="fa-solid fa-cog fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap" id="active-page" href="#" data-page-name="profile"><i class="fa-regular fa-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="projects.html" data-page-name="projects"><i class="fa-solid fa-diagram-project fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="courses.html" data-page-name="courses"><i class="fa-solid fa-graduation-cap fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="friends.html" data-page-name="friends"><i class="fa-regular fa-circle-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page" href="files.html" data-page-name="files"><i class="fa-regular fa-file fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="plans.html" data-page-name="plans"><i class="fa-regular fa-credit-card fa-fw"></i></a>
+        </section>
+    </article>
+</nav>
+<!-- end navbar -->
+
+<!-- start main -->
+<main>
+    <section>
+        <h1>profile</h1>
+    </section>
+    <article class="bg-white br-15 d-flex f-wrap f-nowrap-q1200 tt-capitalize m-0-15-15">
+        <section class="d-flex fd-column jc-center w-p100-300-q1200 ai-center gap-15 p-20 br-1-grey">
+            <section>
+                <img
+                    src="photos/avatar.png"
+                    alt="avatar"
+                    width="120px"
+                    height="120px"
+                />
+            </section>
+            <section class="fs-20">
+                Osama Elzero
+            </section>
+            <section class="fs-16 c-dark-grey">
+                Level 20
+            </section>
+            <section class="progress bg-blue-33">
+                <section class="w-p80 h-p100 bg-blue br-5"></section>
+            </section>
+            <section class="c-orange fs-14">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </section>
+            <section class="fs-13 c-dark-grey">
+                550 Rating
+            </section>
+        </section>
+        <section class="d-flex fd-column jc-center h-p100 w-p100 fs-13">
+            <section class="bb-1-solid-grey p-20 h-p100 bg-light-grey-33-hover d-flex fd-column gap-10">
+                <section class="c-dark-grey p-0-20">General Information</section>
+                <section class="d-flex f-wrap jc-space-between p-0-20 ai-center gap-10">
+                    <section class="w-200"><span class="c-dark-grey">Full Name:</span> Osama Mohamed</section>
+                    <section class="w-200"><span class="c-dark-grey">Gender:</span> Male</section>
+                    <section class="w-200"><span class="c-dark-grey">Country:</span> Egypt</section>
+                    <section class="w-200">
+                        <label for="switch-one"></label>
+                        <input class="switch" type="checkbox" name="one" id="switch-one" checked>
+                    </section>
+                </section>
+            </section>
+            <section class="bb-1-solid-grey p-20 h-p100 bg-light-grey-33-hover d-flex fd-column gap-10">
+                <section class="c-dark-grey p-0-20">Personal Information</section>
+                <section class="d-flex f-wrap jc-space-between p-0-20 ai-center gap-10">
+                    <section class="w-200"><span class="c-dark-grey">Email:</span> o@nn.sa</section>
+                    <section class="w-200"><span class="c-dark-grey">Phone: </span> 019123456789</section>
+                    <section class="w-200"><span class="c-dark-grey">Date Of Birth:</span> 25/10/1982</section>
+                    <section class="w-200">
+                        <label for="switch-two"></label>
+                        <input class="switch" type="checkbox" name="one" id="switch-two">
+                    </section>
+                </section>
+            </section>
+            <section class="bb-1-solid-grey p-20 h-p100 bg-light-grey-33-hover d-flex fd-column gap-10">
+                <section class="c-dark-grey p-0-20">Job Information</section>
+                <section class="d-flex f-wrap jc-space-between p-0-20 ai-center gap-10">
+                    <section class="w-200"><span class="c-dark-grey">Title:</span> Full Stack Developer</section>
+                    <section class="w-200"><span class="c-dark-grey">Programming Language:</span> Python</section>
+                    <section class="w-200"><span class="c-dark-grey">Years Of Experience:</span>  15+</section>
+                    <section class="w-200">
+                        <label for="switch-three"></label>
+                        <input class="switch" type="checkbox" name="one" id="switch-three" checked>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 h-p100 bg-light-grey-33-hover d-flex fd-column gap-10">
+                <section class="c-dark-grey p-0-20">Billing Information</section>
+                <section class="d-flex f-wrap jc-space-between p-0-20 ai-center gap-10">
+                    <section class="w-200"><span class="c-dark-grey">Payment Method:</span> Paypal</section>
+                    <section class="w-200"><span class="c-dark-grey">Email:</span> email@website.com</section>
+                    <section class="w-200"><span class="c-dark-grey">Subscription:</span> Monthly</section>
+                    <section class="w-200">
+                        <label for="switch-four"></label>
+                        <input class="switch" type="checkbox" name="one" id="switch-four">
+                    </section>
+                </section>
+            </section>
+        </section>
+    </article>
+    <article class="d-flex w-p100 f-wrap-q991">
+        <section class="w-p100 w-p100-max300-q991 bg-white br-15 d-flex fd-column tt-capitalize m-0-15-15 p-20 gap-20">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">My Skills</h2>
+                <p class="fs-16 c-dark-grey">Complete Skills List</p>
+            </section>
+            <section class="fs-13">
+                <section class="d-flex bb-1-solid-grey p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">HTML</section>
+                    <section class="p-5-10 bg-grey br-5">PugJs</section>
+                    <section class="p-5-10 bg-grey br-5">HAML</section>
+                </section>
+                <section class="d-flex bb-1-solid-grey p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">CSS</section>
+                    <section class="p-5-10 bg-grey br-5">SASS</section>
+                    <section class="p-5-10 bg-grey br-5">Stylus</section>
+                </section>
+                <section class="d-flex bb-1-solid-grey p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">JavaScript</section>
+                    <section class="p-5-10 bg-grey br-5">TypeScript</section>
+                </section>
+                <section class="d-flex bb-1-solid-grey p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">VueJs</section>
+                    <section class="p-5-10 bg-grey br-5">ReactJs</section>
+                </section>
+                <section class="d-flex bb-1-solid-grey p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">Jest</section>
+                    <section class="p-5-10 bg-grey br-5">Jasmine</section>
+                </section>
+                <section class="d-flex bb-1-solid-grey p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">PHP</section>
+                    <section class="p-5-10 bg-grey br-5">Laravel</section>
+                </section>
+                <section class="d-flex p-10-0 gap-5">
+                    <section class="p-5-10 bg-grey br-5">Python</section>
+                    <section class="p-5-10 bg-grey br-5">Django</section>
+                </section>
+            </section>
+        </section>
+        <section class="w-p100 bg-white br-15 d-flex fd-column tt-capitalize m-0-15-15 p-20 gap-20">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">Latest Activities</h2>
+                <p class="fs-16 c-dark-grey">Latest Activities Done By The User</p>
+            </section>
+            <section class="d-flex fd-column gap-20">
+                <section class="d-flex w-p100 gap-10 bb-1-solid-grey ai-center pb-10 fd-column-q768 ta-center-q-768">
+                    <section>
+                        <img src="photos/activity-01.png" alt="activity" width="60px">
+                    </section>
+                    <section class="d-flex fd-column w-p100 jc-center gap-10 fs-14 ai-center-q768">
+                        <section class="d-flex jc-space-between gap-10 fd-column-q768">
+                            <section>Store</section>
+                            <section>18:10</section>
+                        </section>
+                        <section class="d-flex jc-space-between c-dark-grey gap-10 fd-column-q768">
+                            <section>Bought The Mastering Python Course</section>
+                            <section>Yesterday</section>
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex w-p100 gap-10 bb-1-solid-grey ai-center pb-10 fd-column-q768 ta-center-q-768">
+                    <section>
+                        <img src="photos/activity-02.png" alt="activity" width="60px">
+                    </section>
+                    <section class="d-flex fd-column w-p100 jc-center gap-10 fs-14 ai-center-q768">
+                        <section class="d-flex jc-space-between gap-10 fd-column-q768">
+                            <section>Academy</section>
+                            <section>16:05</section>
+                        </section>
+                        <section class="d-flex jc-space-between c-dark-grey gap-10 fd-column-q768">
+                            <section>Got The PHP Certificate</section>
+                            <section>Yesterday</section>
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex w-p100 gap-10 bb-1-solid-grey ai-center pb-10 fd-column-q768 ta-center-q-768">
+                    <section>
+                        <img src="photos/activity-03.png" alt="activity" width="60px">
+                    </section>
+                    <section class="d-flex fd-column w-p100 jc-center gap-10 fs-14 ai-center-q768">
+                        <section class="d-flex jc-space-between gap-10 fd-column-q768">
+                            <section>Badges</section>
+                            <section>18:05</section>
+                        </section>
+                        <section class="d-flex jc-space-between c-dark-grey gap-10 fd-column-q768">
+                            <section>Unlocked The 10 Skills Badge</section>
+                            <section>Yesterday</section>
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex w-p100 gap-10 ai-center pb-10 fd-column-q768 ta-center-q-768">
+                    <section>
+                        <img src="photos/activity-01.png" alt="activity" width="60px">
+                    </section>
+                    <section class="d-flex fd-column w-p100 jc-center gap-10 fs-14 ai-center-q768">
+                        <section class="d-flex jc-space-between gap-10 fd-column-q768">
+                            <section>Store</section>
+                            <section>12:05</section>
+                        </section>
+                        <section class="d-flex jc-space-between c-dark-grey gap-10 fd-column-q768">
+                            <section>Bought The Typescript Course</section>
+                            <section>Yesterday</section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </article>
+</main>
+<!-- end main -->
+</body>
+</html>

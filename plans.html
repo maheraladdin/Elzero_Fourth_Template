@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Files</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-grey">
+<!-- start header  -->
+<header class="d-flex jc-space-between p-10 ai-center bg-white">
+    <article id="magic-search-icon">
+        <input class="fs-13 tt-capitalize" id="search-box" name="search" type="text" placeholder="type a Keyword" />
+    </article>
+    <article class="d-flex jc-space-between w-80 ai-center">
+        <section>
+            <i id="red-notification" class="fa-regular fa-bell fa-fw"></i>
+        </section>
+        <section>
+            <img
+                    src="photos/avatar.png"
+                    alt="user image"
+                    width="40"
+                    height="40"
+            />
+        </section>
+    </article>
+
+</header>
+<!-- end header -->
+
+<!-- start navbar-->
+<nav class="d-flex jc-space-between p-5 ai-center bg-white p-fixed">
+    <article class="d-flex ai-center">
+        <section class="d-flex ai-center jc-center">
+            <h3 class="fs-15"> Elzero </h3>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page"  href="index.html" data-page-name="dashboard"><i class="fa-regular fa-chart-bar fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="settings.html" data-page-name="settings"><i class="fa-solid fa-cog fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="profile.html" data-page-name="profile"><i class="fa-regular fa-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="projects.html" data-page-name="projects"><i class="fa-solid fa-diagram-project fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="courses.html" data-page-name="courses"><i class="fa-solid fa-graduation-cap fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="friends.html" data-page-name="friends"><i class="fa-regular fa-circle-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page" href="files.html" data-page-name="files"><i class="fa-regular fa-file fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap" id="active-page" href="#" data-page-name="plans"><i class="fa-regular fa-credit-card fa-fw"></i></a>
+        </section>
+    </article>
+</nav>
+<!-- end navbar -->
+
+<!-- start main -->
+<main>
+    <section>
+        <h1>plans</h1>
+    </section>
+    <article class="d-grid gap-15 p-15 grid-autofit-300-1fr">
+        <!--    free    -->
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="bg-green b-3-white outline-3-green h-150 d-flex fd-column ai-center jc-center gap-10">
+                <section class="c-white fs-24">Free</section>
+                <section class="c-white fs-32"><sup>$</sup>0.00</section>
+            </section>
+            <section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Text Lessons</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Videos Lessons</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Appear On Leaderboard</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> Browse Content Without Ads</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> Access All Assignments</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> Get Daily Prizes</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> Earn Certificate</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> 1 GB Space For Hosting Files</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> Access Badge System</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+            </section>
+            <section class="as-flex-start p-5-10 bg-green br-5 fs-13">
+                <a href="#" class="td-none c-white">Join</a>
+            </section>
+        </section>
+        <!--    basic    -->
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="bg-blue b-3-white outline-3-blue h-150 d-flex fd-column ai-center jc-center gap-10">
+                <section class="c-white fs-24">Basic</section>
+                <section class="c-white fs-32"><sup>$</sup>7.99</section>
+            </section>
+            <section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Text Lessons</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Videos Lessons</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Appear On Leaderboard</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Browse Content Without Ads</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Assignments</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Get Daily Prizes</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Earn Certificate</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> 1 GB Space For Hosting Files</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-red fa-solid fa-x"></i> Access Badge System</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+            </section>
+            <section class="as-flex-start p-5-10 bg-blue br-5 fs-13">
+                <a href="#" class="td-none c-white">Join</a>
+            </section>
+        </section>
+        <!--    premium    -->
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15 ai-center" >
+            <section class="w-p100 bg-orange b-3-white outline-3-orange h-150 d-flex fd-column ai-center jc-center gap-10">
+                <section class="c-white fs-24">premium</section>
+                <section class="c-white fs-32"><sup>$</sup>19.99</section>
+            </section>
+            <section class="w-p100">
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Text Lessons</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Videos Lessons</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Appear On Leaderboard</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Browse Content Without Ads</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access All Assignments</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Get Daily Prizes</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Earn Certificate</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> 1 GB Space For Hosting Files</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey p-10-0 fs-14">
+                    <section><i class="w-20 c-green fa-solid fa-check"></i> Access Badge System</section>
+                    <section><i title="more info" class="c-pointer c-dark-grey fa-solid fa-circle-info"></i></section>
+                </section>
+            </section>
+            <section class="fs-13 c-dark-grey p-5-10">
+                This Is Your Current Plan
+            </section>
+        </section>
+    </article>
+</main>
+<!-- end main -->
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-grey">
+<!-- start header  -->
+<header class="d-flex jc-space-between p-10 ai-center bg-white">
+    <article id="magic-search-icon">
+        <input class="fs-13 tt-capitalize" id="search-box" name="search" type="text" placeholder="type a Keyword" />
+    </article>
+    <article class="d-flex jc-space-between w-80 ai-center">
+        <section>
+            <i id="red-notification" class="fa-regular fa-bell fa-fw"></i>
+        </section>
+        <section>
+            <img
+                    src="photos/avatar.png"
+                    alt="user image"
+                    width="40"
+                    height="40"
+            />
+        </section>
+    </article>
+
+</header>
+<!-- end header -->
+
+<!-- start navbar-->
+<nav class="d-flex jc-space-between p-5 ai-center bg-white p-fixed">
+    <article class="d-flex ai-center">
+        <section class="d-flex ai-center jc-center">
+            <h3 class="fs-15"> Elzero </h3>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page"  href="index.html" data-page-name="dashboard"><i class="fa-regular fa-chart-bar fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="settings.html" data-page-name="settings"><i class="fa-solid fa-cog fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="profile.html" data-page-name="profile"><i class="fa-regular fa-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="projects.html" data-page-name="projects"><i class="fa-solid fa-diagram-project fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="courses.html" data-page-name="courses"><i class="fa-solid fa-graduation-cap fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap" id="active-page" href="#" data-page-name="friends"><i class="fa-regular fa-circle-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page" href="files.html" data-page-name="files"><i class="fa-regular fa-file fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="plans.html" data-page-name="plans"><i class="fa-regular fa-credit-card fa-fw"></i></a>
+        </section>
+    </article>
+</nav>
+<!-- end navbar -->
+
+<!-- start main -->
+<main>
+    <section>
+        <h1>friends</h1>
+    </section>
+    <article class="d-grid grid-autofit-300-1fr gap-15 p-15">
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-01.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Ahmed Nasser</section>
+                <section class="fs-13 c-dark-grey">JavaScript Developer</section>
+            </section>
+            <section class="d-flex jc-space-between ai-center bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 99 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 15 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 25 Articles</section>
+                </section>
+                <section class="fs-32 c-orange opacity-33 tt-uppercase">
+                    VIP
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/10/2021</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-02.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Omar Fathy</section>
+                <section class="fs-13 c-dark-grey">Cloud Developer</section>
+            </section>
+            <section class="bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 30 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 11 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 12 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/08/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-03.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Omar Ahmed</section>
+                <section class="fs-13 c-dark-grey">Mobile Developer</section>
+            </section>
+            <section class="bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 80 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 20 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 18 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/06/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-04.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Shady Nabil</section>
+                <section class="fs-13 c-dark-grey">Back-End Developer</section>
+            </section>
+            <section class="ai-center bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 70 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 30 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 18 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 28/06/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-05.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Mohamed Ibrahim</section>
+                <section class="fs-13 c-dark-grey">Algorithm Developer</section>
+            </section>
+            <section class="bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 80 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 30 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 18 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 28/08/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-04.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Amr Hendawy</section>
+                <section class="fs-13 c-dark-grey">Back-End Developer</section>
+            </section>
+            <section class="bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 70 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 30 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 18 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 28/06/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-02.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Mahmoud Adel</section>
+                <section class="fs-13 c-dark-grey">Cloud Developer</section>
+            </section>
+            <section class="bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 30 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 11 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 12 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/08/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-05.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Ahmed Abuzaid</section>
+                <section class="fs-13 c-dark-grey">Content Creator</section>
+            </section>
+            <section class="d-flex jc-space-between ai-center bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 80 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 30 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 18 Articles</section>
+                </section>
+                <section class="fs-32 c-orange opacity-33 tt-uppercase">
+                    VIP
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/10/2021</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-01.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Gareeb Elshiekh</section>
+                <section class="fs-13 c-dark-grey">JavaScript Developer</section>
+            </section>
+            <section class="d-flex jc-space-between ai-center bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 90 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 15 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 25 Articles</section>
+                </section>
+                <section class="fs-32 c-orange opacity-33 tt-uppercase">
+                    VIP
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/10/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+            <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                <a href="#" class="td-none"><i class="fa-solid fa-phone bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+                <a href="#" class="td-none"><i class="fa-regular fa-envelope bg-dark-grey-33 c-dark-grey c-pointer p-10 br-50 fs-13 hover-bg-blue-c-white"></i></a>
+            </section>
+            <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                <section><img class="br-50" src="photos/friend-03.jpg" alt="friend-1" width="100px"></section>
+                <section class="fs-14">Hamza</section>
+                <section class="fs-13 c-dark-grey">Front-End Developer</section>
+            </section>
+            <section class="bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10 fs-13">
+                    <section><i class="fa-regular fa-face-smile w-20"></i> 80 Friend</section>
+                    <section><i class="fa-solid fa-code-commit w-20"></i> 20 Projects</section>
+                    <section><i class="fa-regular fa-newspaper w-20"></i> 18 Articles</section>
+                </section>
+            </section>
+            <section class="d-flex jc-space-between ai-center fs-13">
+                <section>Joined 02/06/2020</section>
+                <section class="d-flex gap-5">
+                    <section class="p-5 bg-blue br-5"><a class="td-none c-white  fw-900" href="profile.html">Profile</a></section>
+                    <section class="p-5 bg-red br-5"><a class="td-none c-white fw-900" href="friends.html">Remove</a></section>
+                </section>
+            </section>
+        </section>
+    </article>
+</main>
+<!-- end main -->
+</body>
+</html>

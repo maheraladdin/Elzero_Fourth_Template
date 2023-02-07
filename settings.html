@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-grey">
+<!-- start header  -->
+<header class="d-flex jc-space-between p-10 ai-center bg-white">
+    <article id="magic-search-icon">
+        <input class="fs-13 tt-capitalize" id="search-box" name="search" type="text" placeholder="type a Keyword" />
+    </article>
+    <article class="d-flex jc-space-between w-80 ai-center">
+        <section>
+            <i id="red-notification" class="fa-regular fa-bell fa-fw"></i>
+        </section>
+        <section>
+            <img
+                    src="photos/avatar.png"
+                    alt="user image"
+                    width="40"
+                    height="40"
+            />
+        </section>
+    </article>
+
+</header>
+
+<!-- start navbar-->
+<nav class="d-flex jc-space-between p-5 ai-center bg-white p-fixed">
+    <article class="d-flex ai-center">
+        <section class="d-flex ai-center jc-center">
+            <h3 class="fs-15"> Elzero </h3>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page"  href="index.html" data-page-name="dashboard"><i class="fa-regular fa-chart-bar fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap" id="active-page" href="#" data-page-name="settings"><i class="fa-solid fa-cog fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="profile.html" data-page-name="profile"><i class="fa-regular fa-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="projects.html" data-page-name="projects"><i class="fa-solid fa-diagram-project fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="courses.html" data-page-name="courses"><i class="fa-solid fa-graduation-cap fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="friends.html" data-page-name="friends"><i class="fa-regular fa-circle-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page" href="files.html" data-page-name="files"><i class="fa-regular fa-file fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="plans.html" data-page-name="plans"><i class="fa-regular fa-credit-card fa-fw"></i></a>
+        </section>
+    </article>
+</nav>
+<!-- end navbar -->
+<!-- start main -->
+<main>
+    <section>
+        <h1>settings</h1>
+    </section>
+    <article class="d-grid responsive gap-15 p-15">
+
+        <!-- start Site Control section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize d-flex fd-column gap-15">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">Site Control</h2>
+                <p class="fs-16 c-dark-grey">Control The Website If There Is Maintenance</p>
+            </section>
+            <section class="d-flex ai-center jc-space-between">
+                <section class="d-flex fd-column gap-5">
+                    <section class="fs-14">Website Control</section>
+                    <section class="fs-14 c-dark-grey">Open/Close Website And Type The Reason</section>
+                </section>
+                <section>
+                    <input type="checkbox" class="switch" checked/>
+                </section>
+            </section>
+            <section class="d-flex">
+                <textarea class="b-1-gray rs-none w-p100 p-10 fs-13 br-5 ff-monospace" name="closeMsgContent" rows="10" placeholder="Close Message Content"></textarea>
+            </section>
+        </section>
+
+        <!-- end Site Control section -->
+
+        <!-- start General Info section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize d-flex fd-column gap-15">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">General Info</h2>
+                <p class="fs-16 c-dark-grey">General Information About Your Account</p>
+            </section>
+            <form action="#" class="d-flex fd-column gap-15">
+                <section class="d-flex fd-column gap-10">
+                    <label class="d-block fs-14 c-dark-grey" for="firstName">First Name</label>
+                    <input class="fs-13 p-10 b-1-gray br-5" id="firstName" type="text" placeholder="First Name" />
+                </section>
+                <section class="d-flex fd-column gap-10">
+                    <label class="d-block fs-14 c-dark-grey" for="lastName">Last Name</label>
+                    <input class="fs-13 p-10 b-1-gray br-5" id="lastName" type="text" placeholder="Last Name" />
+                </section>
+                <section class="d-flex fd-column gap-10">
+                    <label class="d-block fs-14 c-dark-grey" for="Email">Email</label>
+                    <section class="d-flex w-p100 jc-space-between">
+                        <input class="fs-13 p-10 b-1-gray br-5 w-p75" id="Email" type="text" placeholder="o@nn.sa" disabled/>
+                        <input type="submit" value="Change" class="c-pointer fs-14 b-none bg-transparent c-blue fw-900">
+                    </section>
+                </section>
+            </form>
+        </section>
+
+        <!-- end General Info section -->
+
+        <!-- start Security Info section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize d-flex fd-column gap-15">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">Security Info</h2>
+                <p class="fs-16 c-dark-grey">Security Information About Your Account</p>
+            </section>
+            <section class="d-flex fd-column gap-15">
+                <section class="d-flex jc-space-between bb-1-solid-grey h-60">
+                    <section class="d-flex fd-column gap-5">
+                        <section class="fs-14">Password</section>
+                        <section class="fs-13 c-dark-grey">Last Change On 25/10/2021</section>
+                    </section>
+                    <section class="p-5">
+                        <input type="submit" value="Change" class="c-pointer fs-14 b-none bg-blue c-white p-5-10 br-5 fw-900" />
+                    </section>
+                </section>
+                <section class="d-flex jc-space-between bb-1-solid-grey h-60">
+                    <section class="d-flex fd-column gap-5">
+                        <section class="fs-14">Two-Factor Authentication</section>
+                        <section class="fs-13 c-dark-grey">Enable/Disable The Feature</section>
+                    </section>
+                    <section class="p-5">
+                        <input type="checkbox" class="switch" checked/>
+                    </section>
+                </section>
+                <section class="d-flex jc-space-between h-60">
+                    <section class="d-flex fd-column gap-5">
+                        <section class="fs-14">Devices</section>
+                        <section class="fs-13 c-dark-grey">Check The Login Devices List</section>
+                    </section>
+                    <section class="p-5">
+                        <input type="submit" value="Change" class="c-pointer fs-14 b-none bg-grey p-5-10 br-5 fw-900" />
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- end Security Info section -->
+
+        <!-- start Social Info section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize d-flex fd-column gap-15">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">Social Info</h2>
+                <p class="fs-16 c-dark-grey">Social Media Information</p>
+            </section>
+            <section class="d-flex fd-column w-p100 gap-15">
+                <section class="d-flex jc-flex-end social-info-input">
+                    <input type="text" class="w-p100 p-10 fs-13 bg-grey b-1-gray" placeholder="Twitter Username">
+                    <i class="fa-brands fa-twitter"></i>
+                </section>
+                <section class="d-flex jc-flex-end social-info-input">
+                    <input type="text"  class="w-p100 p-10 fs-13 bg-grey b-1-gray" placeholder="Facebook Username">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </section>
+                <section class="d-flex jc-flex-end social-info-input">
+                    <input type="text"  class="w-p100 p-10 fs-13 bg-grey b-1-gray" placeholder="Linkedin Username">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </section>
+                <section class="d-flex jc-flex-end social-info-input">
+                    <input type="text"  class="w-p100 p-10 fs-13 bg-grey b-1-gray" placeholder="Youtube Username">
+                    <i class="fa-brands fa-youtube"></i>
+                </section>
+            </section>
+        </section>
+
+        <!-- end Social Info section -->
+
+        <!-- start Widgets Control section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize d-flex fd-column gap-15">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">Site Control</h2>
+                <p class="fs-16 c-dark-grey">Show/Hide Widgets</p>
+            </section>
+            <section>
+                <section class="d-flex fd-column gap-15 jc-center">
+                    <label class="c-pointer d-flex ai-center" for="Quick-Draft" ><input id="Quick-Draft" type="checkbox" name="showHideWidgets" class="cool-checkbox" checked />Quick Draft</label>
+                    <label class="c-pointer d-flex ai-center" for="Yearly-Targets" ><input id="Yearly-Targets" type="checkbox" name="showHideWidgets" class="cool-checkbox" checked />Yearly Targets</label>
+                    <label class="c-pointer d-flex ai-center" for="Tickets-Statistics" ><input id="Tickets-Statistics" type="checkbox" name="showHideWidgets" class="cool-checkbox" checked />Tickets Statistics</label>
+                    <label class="c-pointer d-flex ai-center" for="Latest-News" ><input id="Latest-News" type="checkbox" name="showHideWidgets" class="cool-checkbox" checked />Latest News</label>
+                    <label class="c-pointer d-flex ai-center" for="Latest-Tasks" ><input id="Latest-Tasks" type="checkbox" name="showHideWidgets" class="cool-checkbox" />Latest Tasks</label>
+                    <label class="c-pointer d-flex ai-center" for="Top-Search-Items" ><input id="Top-Search-Items" type="checkbox" name="showHideWidgets" class="cool-checkbox" checked />Top Search Items</label>
+                </section>
+            </section>
+        </section>
+
+        <!-- end Widgets Control section -->
+
+        <!-- start Backup Manager section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize d-flex fd-column">
+            <section class="d-flex fd-column gap-5">
+                <h2 class="fs-26">Backup Manager</h2>
+                <p class="fs-16 c-dark-grey">Control Backup Time And Location</p>
+            </section>
+            <section class="d-flex fd-column gap-15 bb-1-solid-grey p-20-0">
+                <section class="awesome-radio"><label for="daily"><input type="radio" name="time" id="daily" checked/></label></section>
+                <section class="awesome-radio"><label for="weekly"><input type="radio" name="time" id="weekly" /></label></section>
+                <section class="awesome-radio"><label for="monthly"><input type="radio" name="time" id="monthly" /></label></section>
+            </section>
+            <section id="choose-card">
+                <label for="Megaman"><input type="radio" name="location" id="Megaman"  /><section class="fs-13"><i class="fa-solid fa-server d-block"></i>Megaman</section></label>
+                <label for="Zero"><input type="radio" name="location" id="Zero"  checked/><section class="fs-13"><i class="fa-solid fa-server d-block"></i>Zero</section></label>
+                <label for="Sigma"><input type="radio" name="location" id="Sigma"  /><section class="fs-13"><i class="fa-solid fa-server d-block"></i>Sigma</section></label>
+            </section>
+        </section>
+
+        <!-- end Backup Manager section -->
+
+    </article>
+</main>
+<!-- end main -->
+</body>
+</html>

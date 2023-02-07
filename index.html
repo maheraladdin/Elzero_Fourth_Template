@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-grey-33">
+
+<!-- start header  -->
+<header class="d-flex jc-space-between p-10 ai-center bg-white">
+    <article id="magic-search-icon">
+        <input class="fs-13 tt-capitalize" id="search-box" name="search" type="text" placeholder="type a Keyword" />
+    </article>
+    <article class="d-flex jc-space-between w-80 ai-center">
+        <section>
+            <i id="red-notification" class="fa-regular fa-bell fa-fw"></i>
+        </section>
+        <section>
+            <img
+                    src="photos/avatar.png"
+                    alt="avatar"
+                    width="40"
+                    height="40"
+            />
+        </section>
+    </article>
+
+</header>
+<!-- end header -->
+
+<!-- start navbar-->
+<nav class="d-flex jc-space-between p-5 ai-center bg-white p-fixed">
+    <article class="d-flex ai-center">
+        <section class="d-flex ai-center jc-center">
+            <h3 class="fs-15"> Elzero </h3>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap" id="active-page" href="#" data-page-name="dashboard"><i class="fa-regular fa-chart-bar fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="settings.html" data-page-name="settings"><i class="fa-solid fa-cog fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="profile.html" data-page-name="profile"><i class="fa-regular fa-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="projects.html" data-page-name="projects"><i class="fa-solid fa-diagram-project fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="courses.html" data-page-name="courses"><i class="fa-solid fa-graduation-cap fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="friends.html" data-page-name="friends"><i class="fa-regular fa-circle-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="files.html" data-page-name="files"><i class="fa-regular fa-file fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="plans.html" data-page-name="plans"><i class="fa-regular fa-credit-card fa-fw"></i></a>
+        </section>
+    </article>
+</nav>
+<!-- end navbar -->
+
+<!-- start main -->
+
+<main>
+    <section>
+        <h1>Dashboard</h1>
+    </section>
+    <article class="d-grid responsive gap-15 p-15">
+        <!-- start  welcome section -->
+
+        <section class="bg-white br-15 o-hidden tt-capitalize">
+            <section class="bg-dark-grey-33 h-100 p-25 d-flex jc-space-between">
+                <section>
+                    <h2 class="fs-26">Welcome</h2>
+                    <p class="p-10 ti-20 c-dark-grey fs-16"> Elzero </p>
+                </section>
+                <section>
+                    <img
+                            src="photos/welcome.png"
+                            alt="welcome"
+                            width="150px"
+                            class="d-none"
+                            id="welcome-photo-appear"
+                    />
+                </section>
+            </section>
+            <section
+                    class="c-dark-grey-33 h-80"
+                    id="welcome-avatar-section"
+            >
+                <img
+                        class="br-50"
+                        id="welcome-avatar"
+                        src="photos/avatar.png"
+                        alt="avatar"
+                        width="70"
+                        height="70"
+                />
+            </section>
+            <section
+                    id="welcome-info-section"
+            >
+                <section class="p-15">
+                <p class="ta-center p-5">Osama Elzero</p>
+                <p class="ta-center c-dark-grey p-10"> Developer </p>
+                </section>
+                <section class="p-15">
+                <p class="ta-center p-5"> 80 </p>
+                <p class="ta-center c-dark-grey p-10"> projects </p>
+                </section>
+                <section class="p-15">
+                <p class="ta-center p-5"> $8500 </p>
+                <p class="ta-center c-dark-grey p-10"> Earned </p>
+                </section>
+            </section>
+            <section class="p-15">
+                <section class="h-30 p-relative">
+                    <a href="profile.html" class="blue-button">
+                        Profile
+                    </a>
+                </section>
+            </section>
+        </section>
+
+        <!-- end  welcome section -->
+
+        <!-- start quick draft section -->
+
+        <section class="bg-white br-15 o-hidden p-20 tt-capitalize">
+            <section>
+                <h2 class="fs-26 p-5"> Quick Draft </h2>
+                <p class="fs-16 p-5 c-dark-grey" id="draft-paragraph"> Write a Draft for your ideas</p>
+            </section>
+            <form action="#" class="d-flex fd-column h-p80">
+                <input id="input-title" type="text" name="title" placeholder="Title" />
+                <textarea id="textarea-your-thoughts" name="your thought" rows="10" placeholder="Your Thoughts"></textarea>
+                <section class="h-30 p-relative">
+                    <input type="submit" href="profile.html" class="blue-button" value="save">
+                </section>
+            </form>
+        </section>
+
+        <!-- end quick draft section -->
+
+
+        <!-- start yearly targets section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-20 tt-capitalize">
+            <section class="h-60 d-flex fd-column gap-10">
+                <h2 class="fs-26 ws-nowrap"> Yearly Targets </h2>
+                <p class="fs-16 c-dark-grey"> Targets of the year</p>
+            </section>
+            <article class="d-flex fd-column jc-space-around h-p85 gap-10">
+                <section class="d-flex ai-center gap-20">
+                    <section class="mw-80 w-80 bg-blue-33 h-80 d-flex jc-center ai-center">
+                        <i class="c-blue fs-24 fa-solid fa-dollar-sign"></i></section>
+                    <section class="d-flex fd-column gap-10 w-p100">
+                        <p class="c-dark-grey fs-14">Money</p>
+                        <p class="fw-700">$20.000</p>
+                        <section class="progress bg-blue-33">
+                            <section class="w-p80 h-p100 bg-blue br-5 progress-massage progress-massage-blue" data-progress="80"></section>
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex ai-center gap-20">
+                    <section class="mw-80 w-80 bg-orange-33 h-80 d-flex jc-center ai-center">
+                        <i class="c-orange fs-24 fa-solid fa-code"></i></section>
+                    <section class="d-flex fd-column gap-10 w-p100">
+                        <p class="c-dark-grey fs-14">Projects</p>
+                        <p class="fw-700">24</p>
+                        <section class="progress bg-orange-33">
+                            <section class="w-p55 h-p100 bg-orange br-5 progress-massage progress-massage-orange" data-progress="55"></section>
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex ai-center gap-20">
+                    <section class="mw-80 w-80 bg-green-33 h-80 d-flex jc-center ai-center">
+                        <i class="c-green fs-24 fa-solid fa-user"></i></section>
+                    <section class="d-flex fd-column gap-10 w-p100">
+                        <p class="c-dark-grey fs-14">Team</p>
+                        <p class="fw-700">12</p>
+                        <section class="progress bg-green-33">
+                            <section class="w-p75 h-p100 bg-green br-5 progress-massage progress-massage-green" data-progress="75"></section>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+
+        <!-- end yearly targets section -->
+
+        <!-- start Tickets Statistics section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-20 tt-capitalize">
+            <section class="d-flex fd-column gap-10">
+                <h2>tickets statistics</h2>
+                <p> everything about </p>
+            </section>
+            <article class="d-grid grid-2x2 gap-20 ta-center">
+                <section class="p-15 br-10 d-flex fd-column gap-10">
+                    <section><i class="c-orange fa-regular fa-rectangle-list"></i></section>
+                    <p class="fs-24 fw-700">2500</p>
+                    <p class="fs-10 c-dark-grey">total</p>
+                </section>
+                <section class="p-15 br-10 d-flex fd-column gap-10">
+                    <section><i class="c-blue fa-solid fa-spinner"></i></section>
+                    <p class="fs-24 fw-700">500</p>
+                    <p class="fs-10 c-dark-grey">pending</p>
+                </section>
+                <section class="p-15 br-10 d-flex fd-column gap-10">
+                    <section><i class="c-green fa-regular fa-circle-check"></i></section>
+                    <p class="fs-24 fw-700">1900</p>
+                    <p class="fs-10 c-dark-grey">closed</p>
+                </section>
+                <section class="p-15 br-10 d-flex fd-column gap-10">
+                    <section><i class="c-red fa-regular fa-rectangle-xmark"></i></section>
+                    <p class="fs-24 fw-700">100</p>
+                    <p class="fs-10 c-dark-grey">deleted</p>
+                </section>
+            </article>
+        </section>
+
+        <!-- end Tickets Statistics section -->
+
+        <!-- start The Latest News section -->
+
+        <section class="bg-white br-15 p-20 gap-15 tt-capitalize">
+            <section>
+                <h2> The Latest News </h2>
+            </section>
+            <article>
+                <section class="d-flex jc-space-between gap-20 p-10-0 bb-1-solid-grey o-scroll">
+                    <section class="d-flex gap-10">
+                        <section class="d-flex jc-center ai-center">
+                            <img
+                                class="br-5"
+                                src="photos/news-01.png"
+                                alt="news"
+                                width="100px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column gap-10 jc-center w-160">
+                            <section class="fs-10">
+                                Created SASS Section
+                            </section>
+                            <section class="fs-10 c-dark-grey ws-nowrap">
+                                New SASS Examples & Tutorials
+                            </section>
+                        </section>
+                    </section>
+                    <section class="d-flex jc-center ai-center">
+                        <section class="w-50 ws-nowrap fs-10 p-5-10 bg-dark-grey-33 br-5 ago-days" data-ago-days="3">
+                             Days Ago
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex jc-space-between gap-20 p-10-0 bb-1-solid-grey o-scroll">
+                    <section class="d-flex gap-10">
+                        <section class="d-flex jc-center ai-center">
+                            <img
+                                class="br-5"
+                                src="photos/news-02.png"
+                                alt="news"
+                                width="100px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column gap-10 jc-center w-160">
+                            <section class="fs-10">
+                                Changed The Design
+                            </section>
+                            <section class="fs-10 c-dark-grey ws-nowrap">
+                                A Brand New Website Design
+                            </section>
+                        </section>
+                    </section>
+                    <section class="d-flex jc-center ai-center">
+                        <section class="w-50 ws-nowrap fs-10 p-5-10 bg-dark-grey-33 br-5 ago-days" data-ago-days="5">
+                             Days Ago
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex jc-space-between gap-20 p-10-0 bb-1-solid-grey o-scroll">
+                    <section class="d-flex gap-10">
+                        <section class="d-flex jc-center ai-center">
+                            <img
+                                class="br-5"
+                                src="photos/news-03.png"
+                                alt="news"
+                                width="100px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column gap-10 jc-center w-160">
+                            <section class="fs-10">
+                                Team Increased
+                            </section>
+                            <section class="fs-10 c-dark-grey ws-nowrap">
+                                3 Developers Joined The Team
+                            </section>
+                        </section>
+                    </section>
+                    <section class="d-flex jc-center ai-center">
+                        <section class="w-50 ws-nowrap fs-10 p-5-10 bg-dark-grey-33 br-5 ago-days" data-ago-days="7">
+                             Days Ago
+                        </section>
+                    </section>
+                </section>
+                <section class="d-flex jc-space-between gap-20 p-10-0 o-scroll">
+                    <section class="d-flex gap-10">
+                        <section class="d-flex jc-center ai-center">
+                            <img
+                                class="br-5"
+                                src="photos/news-04.png"
+                                alt="news"
+                                width="100px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column gap-10 jc-center w-160">
+                            <section class="fs-10">
+                                Added Payment Gateway
+                            </section>
+                            <section class="fs-10 c-dark-grey ws-nowrap">
+                                Many New Payment Gateways Added
+                            </section>
+                        </section>
+                    </section>
+                    <section class="d-flex jc-center ai-center">
+                        <section class="w-50 ws-nowrap fs-10 p-5-10 bg-dark-grey-33 br-5 ago-days" data-ago-days="9">
+                             Days Ago
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </section>
+
+        <!-- end The Latest News section -->
+
+        <!-- start The Latest Tasks section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize">
+            <section>
+                <h2>Latest Tasks</h2>
+            </section>
+            <section class="d-flex jc-space-between bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10">
+                    <section class="fs-14">Record One New Video</section>
+                    <section class="fs-13 c-dark-grey">Record Python Create Exe Project</section>
+                </section>
+                <section><i class="c-red-hover c-pointer fa-regular fa-trash-can"></i></section>
+            </section>
+            <section class="d-flex jc-space-between bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10">
+                    <section class="fs-14">Write Article</section>
+                    <section class="fs-13 c-dark-grey">Write Low Level vs High Level Languages</section>
+                </section>
+                <section><i class="c-red-hover c-pointer fa-regular fa-trash-can"></i></section>
+            </section>
+            <section class="d-flex jc-space-between bb-1-solid-grey pb-10">
+                <section class="d-flex fd-column gap-10">
+                    <section class="fs-14">Finish Project</section>
+                    <section class="fs-13 c-dark-grey">Publish Academy Programming Project</section>
+                </section>
+                <section><i class="c-red-hover c-pointer fa-regular fa-trash-can"></i></section>
+            </section>
+            <section class="d-flex jc-space-between bb-1-solid-grey pb-10 opacity-33">
+                <section class="d-flex fd-column gap-10">
+                    <section class="fs-14 deleted">Attend The Meeting</section>
+                    <section class="fs-13 c-dark-grey deleted">Attend The Project Business Analysis Meeting</section>
+                </section>
+                <section><i class="c-red-hover c-pointer fa-regular fa-trash-can"></i></section>
+            </section>
+            <section class="d-flex jc-space-between pb-10">
+                <section class="d-flex fd-column gap-10">
+                    <section class="fs-14">Finish Lesson</section>
+                    <section class="fs-13 c-dark-grey">Finish Teaching Flex Box</section>
+                </section>
+                <section><i class="c-red-hover c-pointer fa-regular fa-trash-can"></i></section>
+            </section>
+        </section>
+
+        <!-- end The Latest Tasks section -->
+
+        <!-- start Top Search Items section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize">
+            <section>
+                <h2>Top Search Items</h2>
+            </section>
+            <article class="d-flex fd-column jc-space-around gap-20">
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13 c-dark-grey">keyword</section>
+                    <section class="fs-13 c-dark-grey">search count</section>
+                </section>
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13">programming</section>
+                    <section class="p-5-10 bg-grey br-5 fs-13">220</section>
+                </section>
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13">javascript</section>
+                    <section class="p-5-10 bg-grey br-5 fs-13">180</section>
+                </section>
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13 tt-uppercase">php</section>
+                    <section class="p-5-10 bg-grey br-5 fs-13">160</section>
+                </section>
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13">code</section>
+                    <section class="p-5-10 bg-grey br-5 fs-13">145</section>
+                </section>
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13">design</section>
+                    <section class="p-5-10 bg-grey br-5 fs-13">110</section>
+                </section>
+                <section class="d-flex jc-space-between">
+                    <section class="fs-13">logic</section>
+                    <section class="p-5-10 bg-grey br-5 fs-13">95</section>
+                </section>
+            </article>
+        </section>
+
+        <!-- end Top Search Items section -->
+
+        <!-- start the Latest Uploads section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize">
+            <section>
+                <h2>Latest Uploads</h2>
+            </section>
+            <article>
+                <section class="d-flex jc-space-between ai-center bb-1-solid-grey p-10-0">
+                    <section class="d-flex gap-10">
+                        <section>
+                            <img
+                                src="photos/pdf.svg"
+                                alt="pdf file"
+                                width="30px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column jc-space-between">
+                            <section class="fw-700 fs-14">my-file.pdf</section>
+                            <section class="fs-13 c-dark-grey">Elzero</section>
+                        </section>
+                    </section>
+                    <section class="fs-10 p-5-10 bg-dark-grey-33 br-5">2.9mb</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center bb-1-solid-grey p-10-0">
+                    <section class="d-flex gap-10">
+                        <section>
+                            <img
+                                src="photos/avi.svg"
+                                alt="avi file"
+                                width="30px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column jc-space-between">
+                            <section class="fw-700 fs-14">My-Video-File.avi</section>
+                            <section class="fs-13 c-dark-grey">Admin</section>
+                        </section>
+                    </section>
+                    <section class="fs-10 p-5-10 bg-dark-grey-33 br-5">4.9mb</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center bb-1-solid-grey p-10-0">
+                    <section class="d-flex gap-10">
+                        <section>
+                            <img
+                                src="photos/psd.svg"
+                                alt="psd file"
+                                width="30px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column jc-space-between">
+                            <section class="fw-700 fs-14">My-Psd-File.psd</section>
+                            <section class="fs-13 c-dark-grey">Osama</section>
+                        </section>
+                    </section>
+                    <section class="fs-10 p-5-10 bg-dark-grey-33 br-5">4.5mb</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center bb-1-solid-grey p-10-0">
+                    <section class="d-flex gap-10">
+                        <section>
+                            <img
+                                src="photos/zip.svg"
+                                alt="zip file"
+                                width="30px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column jc-space-between">
+                            <section class="fw-700 fs-14">My-Zip-File.zip</section>
+                            <section class="fs-13 c-dark-grey">User</section>
+                        </section>
+                    </section>
+                    <section class="fs-10 p-5-10 bg-dark-grey-33 br-5">8.9mb</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center bb-1-solid-grey p-10-0">
+                    <section class="d-flex gap-10">
+                        <section>
+                            <img
+                                src="photos/dll.svg"
+                                alt="dll file"
+                                width="30px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column jc-space-between">
+                            <section class="fw-700 fs-14">My-DLL-File.dll</section>
+                            <section class="fs-13 c-dark-grey">Admin</section>
+                        </section>
+                    </section>
+                    <section class="fs-10 p-5-10 bg-dark-grey-33 br-5">4.9mb</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center p-10-0">
+                    <section class="d-flex gap-10">
+                        <section>
+                            <img
+                                src="photos/eps.svg"
+                                alt="eps file"
+                                width="30px"
+                            />
+                        </section>
+                        <section class="d-flex fd-column jc-space-between">
+                            <section class="fw-700 fs-14">My-Eps-File.eps</section>
+                            <section class="fs-13 c-dark-grey">Designer</section>
+                        </section>
+                    </section>
+                    <section class="fs-10 p-5-10 bg-dark-grey-33 br-5">8.9mb</section>
+                </section>
+            </article>
+        </section>
+
+        <!-- end the Latest Uploads section -->
+
+        <!-- start Last Project Progress section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize p-relative">
+            <section>
+                <h2>Last Project Progress</h2>
+            </section>
+            <article class="d-flex fd-column gap-20 fs-13 fw-700">
+                <section class="blue-circle">Got The Project</section>
+                <section class="blue-circle">Started The Project</section>
+                <section class="blue-circle">The Project About To Finish</section>
+                <section class="blue-animated-circle">Test The Project</section>
+                <section class="blue-unfilled-circle">Finish The Project & Get Money</section>
+            </article>
+            <section class="rocket">
+                <img
+                        src="photos/project.png"
+                        alt="rocket"
+                        width="120px"
+                />
+            </section>
+        </section>
+
+        <!-- end Last Project Progress section -->
+
+        <!-- start Reminders section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize p-relative">
+            <section>
+                <h2>Reminders</h2>
+            </section>
+            <section class="d-flex fd-column gap-20 p-0-30">
+                <section class="d-flex fd-column ti-15 gap-10 bb-1-solid bb-blue bullet-15 bullet-blue">
+                    <section class="fs-13 fw-700">Check My Tasks List</section>
+                    <section class="fs-13 c-dark-grey">28/09/2022 - 12:00am</section>
+                </section>
+                <section class="d-flex fd-column ti-15 gap-10 bb-1-solid bb-green bullet-15 bullet-green">
+                    <section class="fs-13 fw-700">Check My Projects</section>
+                    <section class="fs-13 c-dark-grey">26/10/2022 - 12:00am</section>
+                </section>
+                <section class="d-flex fd-column ti-15 gap-10 bb-1-solid bb-orange bullet-15 bullet-orange">
+                    <section class="fs-13 fw-700">Call All My Clients</section>
+                    <section class="fs-13 c-dark-grey">05/11/2022 - 12:00am</section>
+                </section>
+                <section class="d-flex fd-column ti-15 gap-10 bb-1-solid bb-red bullet-15 bullet-red">
+                    <section class="fs-13 fw-700">Finish The Development Workshop</section>
+                    <section class="fs-13 c-dark-grey">20/12/2022 - 12:00am</section>
+                </section>
+            </section>
+        </section>
+
+        <!-- end Reminders section -->
+
+        <!-- start the Latest Post section -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize p-relative">
+            <section>
+                <h2>Latest Post</h2>
+            </section>
+            <article class="d-flex fd-column gap-10">
+                <section class="d-flex gap-15 ai-center bb-1-solid-grey p-10-0">
+                    <section>
+                        <img
+                                src="photos/avatar.png"
+                                alt="post"
+                                width="60px"
+                        />
+                    </section>
+                    <section class="d-flex fd-column gap-10">
+                        <section>Osama Elzero</section>
+                        <section class="c-dark-grey">About 3 Hours Ago</section>
+                    </section>
+                </section>
+                <section class="bb-1-solid-grey p-10-0 lh-1dot5">
+                    You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.
+                </section>
+                <section class="d-flex jc-space-between ai-center c-dark-grey">
+                    <section><i class="fa-regular fa-heart"></i> 1.8K</section>
+                    <section><i class="fa-regular fa-comments"></i> 500</section>
+                </section>
+            </article>
+        </section>
+
+        <!-- end the Latest Post section -->
+
+        <!-- start Social Media Stats -->
+
+        <section class="bg-white br-15 o-hidden p-20 d-flex fd-column gap-15 tt-capitalize p-relative">
+            <section>
+                <h2>Social Media Stats</h2>
+            </section>
+            <article class="d-flex fd-column gap-10">
+                <section class="bg-light-blue-33 d-flex jc-space-between ai-center h-60 p-r-10">
+                    <section class="d-flex gap-10">
+                        <section class="h-60 w-50 bg-light-blue d-flex jc-center ai-center c-white rotate-10"><i class="fa-brands fa-twitter fa-2x"></i></section>
+                        <section class="d-flex ai-center fs-14 c-light-blue">90K Followers</section>
+                    </section>
+                    <section class="bg-light-blue p-5-10 br-5"><a class="td-none c-white fs-13" href="#">follow</a></section>
+                </section>
+                <section class="bg-blue-33 d-flex jc-space-between ai-center h-60 p-r-10">
+                    <section class="d-flex gap-10">
+                        <section class="h-60 w-50 bg-blue d-flex jc-center ai-center c-white rotate-10"><i class="fa-brands fa-facebook-f fa-2x"></i></section>
+                        <section class="d-flex ai-center fs-14 c-blue">2M Like</section>
+                    </section>
+                    <section class="bg-blue p-5-10 br-5"><a class="td-none c-white fs-13" href="#">like</a></section>
+                </section>
+                <section class="bg-red-33 d-flex jc-space-between ai-center h-60 p-r-10">
+                    <section class="d-flex gap-10">
+                        <section class="h-60 w-50 bg-red d-flex jc-center ai-center c-white rotate-10"><i class="fa-brands fa-youtube fa-2x"></i></section>
+                        <section class="d-flex ai-center fs-14 c-red">1M Subs</section>
+                    </section>
+                    <section class="bg-red p-5-10 br-5"><a class="td-none c-white fs-13" href="#">subscribe</a></section>
+                </section>
+                <section class="bg-dark-blue-33 d-flex jc-space-between ai-center h-60 p-r-10">
+                    <section class="d-flex gap-10">
+                        <section class="h-60 w-50 bg-light-blue d-flex jc-center ai-center c-white rotate-10"><i class="fa-brands fa-linkedin fa-2x"></i></section>
+                        <section class="d-flex ai-center fs-14 c-dark-blue">70K Followers</section>
+                   </section>
+                    <section class="bg-dark-blue p-5-10 br-5"><a class="td-none c-white fs-13" href="#">follow</a></section>
+                </section>
+            </article>
+        </section>
+
+        <!-- end Social Media Stats -->
+    </article>
+    <article class="bg-white br-15 p-20 d-flex fd-column gap-20 tt-capitalize m-0-15-15">
+        <section>
+            <h2>projects</h2>
+        </section>
+        <section class="o-scroll w-p100">
+        <table id="projects" class="w-p100">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Finish Date	</td>
+                    <td>Client</td>
+                    <td>Price</td>
+                    <td>Team</td>
+                    <td>Status</td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ministry Wikipedia	</td>
+                <td>10 May 2022	</td>
+                <td>Ministry</td>
+                <td>$5300	</td>
+                <td class="photos-table">
+                    <img src="photos/team-01.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-02.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-03.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-04.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                </td>
+                <td><p class="c-white fs-14 p-5-10 bg-orange w-fit-content br-5">Pending</p></td>
+            </tr>
+            <tr>
+                <td>Elzero Shop	</td>
+                <td>12 Oct 2021	</td>
+                <td>Elzero Company	</td>
+                <td>$1500	</td>
+                <td class="photos-table">
+                    <img src="photos/team-01.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-02.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-04.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                </td>
+                <td><p class="c-white fs-14 p-5-10 bg-blue w-fit-content br-5">In Progress</p></td>
+            </tr>
+            <tr>
+                <td>Bouba App	</td>
+                <td>05 Sep 2021	</td>
+                <td>Bouba	</td>
+                <td>$800	</td>
+                <td class="photos-table">
+                    <img src="photos/team-02.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-03.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                </td>
+                <td><p class="c-white fs-14 p-5-10 bg-green w-fit-content br-5">Completed</p></td>
+            </tr>
+            <tr>
+                <td>Mahmoud Website	</td>
+                <td>22 May 2021	</td>
+                <td>Mahmoud	</td>
+                <td>$600	</td>
+                <td class="photos-table">
+                    <img src="photos/team-01.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-02.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                </td>
+                <td><p class="c-white fs-14 p-5-10 bg-green w-fit-content br-5">Completed</p></td>
+            </tr>
+            <tr>
+                <td>Sayed Website	</td>
+                <td>24 May 2021	</td>
+                <td>Sayed</td>
+                <td>$300	</td>
+                <td class="photos-table">
+                    <img src="photos/team-01.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-03.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                </td>
+                <td><p class="c-white fs-14 p-5-10 bg-red w-fit-content br-5">Rejected</p></td>
+            </tr>
+            <tr>
+                <td>Arena Application	</td>
+                <td>01 Mar 2021	</td>
+                <td>Arena Company	</td>
+                <td>$2600	</td>
+                <td class="photos-table">
+                    <img src="photos/team-01.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-02.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-03.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                    <img src="photos/team-04.png" alt="team member" width="30px" class="br-50 b-1-solid d-block" />
+                </td>
+                <td><p class="c-white fs-14 p-5-10 bg-green w-fit-content br-5">Completed</p></td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+    </article>
+</main>
+
+<!-- end main -->
+
+</body>
+</html>

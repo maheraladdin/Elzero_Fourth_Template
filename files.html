@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Files</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-grey">
+<!-- start header  -->
+<header class="d-flex jc-space-between p-10 ai-center bg-white">
+    <article id="magic-search-icon">
+        <input class="fs-13 tt-capitalize" id="search-box" name="search" type="text" placeholder="type a Keyword" />
+    </article>
+    <article class="d-flex jc-space-between w-80 ai-center">
+        <section>
+            <i id="red-notification" class="fa-regular fa-bell fa-fw"></i>
+        </section>
+        <section>
+            <img
+                    src="photos/avatar.png"
+                    alt="user image"
+                    width="40"
+                    height="40"
+            />
+        </section>
+    </article>
+
+</header>
+<!-- end header -->
+
+<!-- start navbar-->
+<nav class="d-flex jc-space-between p-5 ai-center bg-white p-fixed">
+    <article class="d-flex ai-center">
+        <section class="d-flex ai-center jc-center">
+            <h3 class="fs-15"> Elzero </h3>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap go-to-page"  href="index.html" data-page-name="dashboard"><i class="fa-regular fa-chart-bar fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="settings.html" data-page-name="settings"><i class="fa-solid fa-cog fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="profile.html" data-page-name="profile"><i class="fa-regular fa-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="projects.html" data-page-name="projects"><i class="fa-solid fa-diagram-project fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="courses.html" data-page-name="courses"><i class="fa-solid fa-graduation-cap fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="friends.html" data-page-name="friends"><i class="fa-regular fa-circle-user fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="c-black ws-nowrap" id="active-page" href="#" data-page-name="files"><i class="fa-regular fa-file fa-fw"></i></a>
+        </section>
+        <section class="d-flex ai-center jc-center">
+            <a class="go-to-page c-black ws-nowrap" href="plans.html" data-page-name="plans"><i class="fa-regular fa-credit-card fa-fw"></i></a>
+        </section>
+    </article>
+</nav>
+<!-- end navbar -->
+
+<!-- start main -->
+<main>
+    <section>
+        <h1>files</h1>
+    </section>
+    <article class="d-flex gap-15 p-15 q768-fd-column-order-m1">
+        <section class="d-grid grid-autofit-200-1fr gap-15 w-p75-q768-p100">
+            <!--    pdf    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/pdf.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.pdf</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Elzero</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>20/06/2020</section>
+                    <section>5.5MB</section>
+                </section>
+            </section>
+            <!--    avi    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/avi.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.avi</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Admin</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>12.5MB</section>
+                </section>
+            </section>
+            <!--    eps    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/eps.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.eps</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Uploader</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.7MB</section>
+                </section>
+            </section>
+            <!--    psd    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/psd.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.psd</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Osama</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>15.1MB</section>
+                </section>
+            </section>
+            <!--    dll    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/dll.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.dll</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Coder</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.2MB</section>
+                </section>
+            </section>
+            <!--    png    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/png.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.png</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Designer</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>1.1MB</section>
+                </section>
+            </section>
+            <!--    dll    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/dll.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.dll</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Coder</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.2MB</section>
+                </section>
+            </section>
+            <!--    png    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/png.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.png</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Designer</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>1.1MB</section>
+                </section>
+            </section>
+            <!--    psd    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/psd.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.psd</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Osama</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>15.1MB</section>
+                </section>
+            </section>
+            <!--    pdf    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/pdf.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.pdf</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Elzero</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>20/06/2020</section>
+                    <section>5.5MB</section>
+                </section>
+            </section>
+            <!--    avi    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/avi.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.avi</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Admin</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>12.5MB</section>
+                </section>
+            </section>
+            <!--    eps    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/eps.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.eps</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Uploader</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.7MB</section>
+                </section>
+            </section>
+            <!--    pdf    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/pdf.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.pdf</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Elzero</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>20/06/2020</section>
+                    <section>5.5MB</section>
+                </section>
+            </section>
+            <!--    avi    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/avi.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.avi</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Admin</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>12.5MB</section>
+                </section>
+            </section>
+            <!--    eps    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/eps.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.eps</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Uploader</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.7MB</section>
+                </section>
+            </section>
+            <!--    psd    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/psd.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.psd</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Osama</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>15.1MB</section>
+                </section>
+            </section>
+            <!--    dll    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/dll.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.dll</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Coder</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.2MB</section>
+                </section>
+            </section>
+            <!--    png    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/png.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.png</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Designer</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>1.1MB</section>
+                </section>
+            </section>
+            <!--    dll    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/dll.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.dll</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Coder</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.2MB</section>
+                </section>
+            </section>
+            <!--    png    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/png.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.png</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Designer</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>1.1MB</section>
+                </section>
+            </section>
+            <!--    psd    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/psd.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.psd</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Osama</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>15.1MB</section>
+                </section>
+            </section>
+            <!--    pdf    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/pdf.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.pdf</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Elzero</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>20/06/2020</section>
+                    <section>5.5MB</section>
+                </section>
+            </section>
+            <!--    avi    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/avi.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.avi</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Admin</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>12.5MB</section>
+                </section>
+            </section>
+            <!--    eps    -->
+            <section class="bg-white br-15 p-20 o-hidden tt-capitalize d-flex fd-column p-relative gap-15" >
+                <section class="p-absolute d-flex gap-5" style="top: 10px; left: 10px;">
+                    <a href="#" class="td-none"><i class="fa-solid fa-download c-dark-grey c-pointer fs-16"></i></a>
+                </section>
+                <section class="d-flex fd-column ai-center gap-10 jc-center bb-1-solid-grey p-20-0">
+                    <section><img class="hover-rotate-10" src="photos/eps.svg" alt="pdf" width="100px"></section>
+                    <section class="fs-14">my-file.eps</section>
+                    <section class="fs-13 c-dark-grey as-flex-start">Uploader</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center fs-13 c-dark-grey">
+                    <section>16/5/2021</section>
+                    <section>2.7MB</section>
+                </section>
+            </section>
+        </section>
+        <section class="bg-white br-15 p-20 tt-capitalize d-flex fd-column gap-15 h-fit-content ai-center w-p20-q768-p100" >
+            <section class="fs-24 as-flex-start">Files Statistics</section>
+                <section class="d-flex jc-space-between ai-center w-p100 b-1-gray p-10 fs-13">
+                    <section class="d-flex gap-10">
+                        <section class="p-15 bg-blue-33 c-blue"><i class="fa-regular fa-file-pdf"></i> </section>
+                        <section class="d-flex fd-column jc-center gap-5">
+                            <section>PDF Files</section>
+                            <section class="c-dark-grey">130 Files</section>
+                        </section>
+                    </section>
+                    <section class="c-dark-grey">6.5GB</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center w-p100 b-1-gray p-10 fs-13">
+                    <section class="d-flex gap-10">
+                        <section class="p-15 bg-green-33 c-green"><i class="fa-regular fa-images"></i> </section>
+                        <section class="d-flex fd-column jc-center gap-5">
+                            <section>Images</section>
+                            <section class="c-dark-grey">115 Files</section>
+                        </section>
+                    </section>
+                    <section class="c-dark-grey">3.5GB</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center w-p100 b-1-gray p-10 fs-13">
+                    <section class="d-flex gap-10">
+                        <section class="p-15 bg-red-33 c-red"><i class="fa-regular fa-file-word"></i> </section>
+                        <section class="d-flex fd-column jc-center gap-5">
+                            <section>Word Files</section>
+                            <section class="c-dark-grey">110 Files</section>
+                        </section>
+                    </section>
+                    <section class="c-dark-grey">3.2GB</section>
+                </section>
+                <section class="d-flex jc-space-between ai-center w-p100 b-1-gray p-10 fs-13">
+                    <section class="d-flex gap-10">
+                        <section class="p-15 bg-orange-33 c-orange"><i class="fa-solid fa-file-csv"></i> </section>
+                        <section class="d-flex fd-column jc-center gap-5">
+                            <section>CSV Files</section>
+                            <section class="c-dark-grey">99 Files</section>
+                        </section>
+                    </section>
+                    <section class="c-dark-grey">2.9GB</section>
+                </section>
+            <section class="fs-13 c-white bg-blue p-10 br-5 w-fit-content c-pointer up-double-arrow">
+                Upload
+            </section>
+        </section>
+    </article>
+</main>
+<!-- end main -->
+</body>
+</html>
